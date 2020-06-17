@@ -1,0 +1,132 @@
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 42px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 28px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.overlay {
+  color:rgb(255, 255, 255);
+  background-color: rgba(1, 63, 77, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  padding: 10%;
+  text-align: center;
+  font-size: 38px;
+}
+
+.logo {
+  float: left;
+  padding: 30px 30px 0px 30px;
+}
+
+.resume {
+  float: right;
+  padding: 40px;
+}
+
+.topnav, .topnav2 {
+  height: 48px;
+  float: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav a, .topnav2 a {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 14px 22px;
+}
+
+.topnav a:hover {
+  color: rgb(255, 168, 82);
+}
+
+.topnav2 a:hover {
+  color: rgb(187, 242, 255);
+}
+
+.section {
+  background-color: rgb(255, 255, 255);
+  color:rgb(50, 50, 50); 
+  padding: 20px;
+}
+
+.section a {
+  color: white;
+  background-color: rgb(3, 131, 161);
+  padding: 20px;
+  margin: 10px 10px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section a:hover {
+  color: rgb(230, 230, 230);
+  background-color: rgb(2, 96, 118);
+}
+
+.footer {
+  background-image: linear-gradient(rgb(0, 10, 13), rgb(1, 63, 77));
+  color:rgb(255, 255, 255); 
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: rgb(200, 200, 200);
+}
+
+hr {
+  position: relative;
+  top: -14px;
+  background-color: rgb(8, 115, 185);
+  border-width: 0px;
+  height: 6px;
+  padding: 0px;
+  display: block;
+}
