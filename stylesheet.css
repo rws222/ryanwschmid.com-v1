@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&display=swap');
 body {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -5,10 +6,345 @@ body {
   font-size: 28px;
   margin: 0px;
   padding: 0px;
+  color: #333;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 6vh;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 8vh;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 42px;
+  text-align: center;
+  color: rgb(72,185,211);
+  padding: 0 20px;
+}
+
+h4 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 26px;
+  text-align: left;
+}
+
+h6 {
+  font-size: 20px;
+  text-align: left;
+}
+
+p {
+  font-size: 22px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 131, 161);
+}
+
+a:hover {
+  color: rgb(72,185,211);
+}
+
+hr {
+  margin: 10px 0;
+  background-color: #333;
+}
+
+.header {
+  background-image: url('images/Lehigh_Overhead_Dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 100vh;
+}
+
+.overlay {
+  color:white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(50, 50, 50, 0.7);
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.logo {
+  flex-basis: 20vh;
+}
+
+.logo a img {
+  width: 100%; 
+}
+
+.topnav {
+  display: none;
+}
+
+.connect {
+  display: none;
+}
+
+.title {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subsection {
+  width: 100%;
+  color: white;
+  padding: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subsection h4 {
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 20px;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+#skills ul {
+  max-width: 80%;
+}
+
+#skills li {
+  font-size: 22px;
+}
+
+#fin_classes {
+  background-color: rgb(3, 131, 161);
+}
+
+#comp_engr_classes {
+  background-color: rgb(190,94,0);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subtitle {
+  padding: 0 20px;
+  text-align: center;
+}
+
+#about_me img, #IBE_program a {
+  max-width: 280px;
+  width: 100%
+}
+
+#leadership {
+  background-image: url("images/Lehigh_Linderman_Darker.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  color: white;
+}
+
+#leadership img, #certifications img {
+  margin: 20px;
+  max-width: 280px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+#leadership h5, #leadership h6, #certifications h5, #certifications h6 {
+  margin: 0;
+}
+
+#leadership h6, #certifications h6 {
+  color: rgb(72,185,211);
+}
+
+#leadership hr {
+  background-color: white;
+}
+
+#leadership .flex-container, #certifications .flex-container {
+  margin: 10px 0;
+}
+
+#certifications a {
+  padding: 0;
+}
+
+.footer {
+  background-image: linear-gradient(rgb(0, 10, 13), rgb(1, 63, 77));
+  color: white; 
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer a {
+  padding: 5px;
+  color: white;
+}
+
+.footer a:hover {
+  padding: 5px;
+  color: rgb(72,185,211);
+}
+
+
+
+/* --- responsive features --- */
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  h2 {
+    font-size: 66px;
+    line-height: 1.4;
+  }
+  
+  .overlay {
+    background-color: rgba(50, 50, 50, 0.1);
+    background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgb(50, 50, 50, 0.3));
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    height: 20vh;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+
+  .logo a img {
+    max-width: 200px;
+  }
+  
+  .topnav {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+  }
+
+  .connect {
+    display: flex;
+    flex: 1;
+  }
+
+  .topnav a, .connect a {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 20px 3vw;
+  }
+
+  .topnav a:hover, .connect a:hover {
+    color: rgb(255, 168, 82);
+  }
+
+  .title {
+    padding: 5vh 20px 0;
+    text-align: center;
+  }
+
+  .section {
+    padding-bottom: 70px;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .flex-container, .subtitle {
+    width: 60vw;
+    min-width: 700px;
+    max-width: 1200px;
+  }
+
+  .flex-container * {
+    padding: 0 40px;
+  }
+
+  #related_coursework .flex-container, #skills .flex-container {
+    margin-bottom: 40px;
+  }
+
+  #related_coursework .flex-container *, #skills .flex-container * {
+    padding: 0;
+  }
+  
+  #activities p {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* For desktop: */
+
+  .flex-container {
+    flex-direction: row;
+    width: 950px;
+  }
+
+  #related_coursework .flex-container, #skills .flex-container {
+    margin-bottom: 40px;
+    align-items: stretch;
+  }
+}
+
+
+/*
+
+h1 {
+  font-size: 66px;
+  line-height: 1.4;
 }
 
 h2 {
@@ -25,6 +361,16 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  font-size: 16px;
+  text-align: center;
+}
+
+p {
+  font-size: 26px;
+  text-align: left;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,19 +379,19 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
+  height: 100vh;
 }
 
 .overlay {
   color:rgb(255, 255, 255);
-  background-color: rgba(1, 63, 77, 0.6);
   height: 100%;
   width: 100%;
+  background-image: linear-gradient(rgba(50, 50, 50, 0.6), rgb(50, 50, 50, 0));
 }
 
 .title {
-  padding: 10%;
+  padding: 25vh 0;
   text-align: center;
-  font-size: 38px;
 }
 
 .logo {
@@ -106,6 +452,12 @@ a {
   background-color: rgb(2, 96, 118);
 }
 
+.contents::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .footer {
   background-image: linear-gradient(rgb(0, 10, 13), rgb(1, 63, 77));
   color:rgb(255, 255, 255); 
@@ -130,3 +482,5 @@ hr {
   padding: 0px;
   display: block;
 }
+
+*/

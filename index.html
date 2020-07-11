@@ -10,51 +10,205 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" href="images/Logo.png">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
     <body>
-        <div class="header" style="background-image: url('images/Lehigh_Overhead_Dark.jpg');">
-            <div class="overlay" style="background-color: rgba(2, 96, 118, 0.2);">
-                <div class="logo">
-                    <a href="index.html"><img src="images/Logo.png" style="width:150px;height:auto;"></a>
+        <div class="header">
+            <div class="overlay">
+                <div class="topbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/Logo.png"></a>
+                    </div>
+                    <div class="topnav">
+                        <a href="#about">ABOUT</a>
+                        <a href="#education">EDUCATION</a>
+                        <a href="#experience">EXPERIENCE</a>
+                    </div>
+                    <div class="connect">
+                        <a href="#footer">CONTACT</a>
+                    </div>
                 </div>
-                <div class="resume" style="display: none">
-                    <a href="Resume.pdf" target="_blank"><img src="images/Resume.png" style="width:50px;height:auto;"></a>
-                </div>
-                <div class="topnav" style="display: none">
-                    <a href="index.html">HOME</a>
-                    <a href="Education.html">EDUCATION</a>
-                    <a href="Experience.html">EXPERIENCE</a>
-                </div>
-                <br />
                 <div class="title">
-                    <h1>Welcome</h1>
-                    <h2>This site is currently under construction.</h2>
-                    <!--<h2>My name is Ryan Schmid,<br />a student at Lehigh University.</h2>-->
+                    <h2>Welcome</h2>
+                    <h1>My name is Ryan Schmid,<br />a student at Lehigh University.</h1>
                 </div>
             </div>
         </div>
-        <!--
-        <div class="section">
-            <h3>About Me</h3>
-            <img src="images/Myself.JPG" style="float:left; padding: 0 10% 20px 10%; width: 20%">
-            <h4 style="padding: 0 10%;">I am currently a rising junior at Lehigh University pursuing degrees in finance and computer engineering as part of the 
-                university's Integrated Business and Engineering (IBE) Honors Program. Based in Bethlehem, PA, I am a leader and 
-                active member in many campus clubs and organizations.</h4>
-            <br />
+        <div id="about">
+            <div id="about_me" class="section" style="background-color: #EEE;">
+                <h3>About Me<hr></h3>
+                <div class="flex-container">
+                    <img src="images/Myself.JPG">
+                    <p>I am a junior at Lehigh University pursuing degrees in finance and computer engineering as part of the 
+                        university's Integrated Business and Engineering (IBE) Honors Program. Based in Bethlehem, PA, I am a leader and 
+                        active member in many campus clubs and organizations. In my free time, I enjoy playing the piano, drums, and guitar.</p>
+                </div>
+            </div>
         </div>
-        <div class="section" style="background-color: rgb(255, 185, 116);clear:both">
-            <h3>Professional Goal</h3>
-            <h4>I am currently looking for an internship during the summer of 2021.</h4>
-            <br />
-            <a href="Education.html">Learn more about my Education</a>
-            <br /><br />
+        <div id="education">
+            <div id="IBE_program" class="section">
+                <h3>IBE Program<hr></h3>
+                <div class="flex-container">
+                    <p>Lehigh's <a href="https://ibe.lehigh.edu/" target="_blank" style="padding:0;">Integrated 
+                        Business and Engineering Honors Program (IBE)</a> is dedicated to producing fifty 
+                        well-rounded students per year who are ready to excel in today's modern business environment. 
+                        The program's IBE-specific classes focus on product development and entrepreneurship, taking a hands-on 
+                        approach to fully experience a wide range of issues in both business and engineering.
+                        The IBE degree is an AACSB accredited business degree involving a rigorous, 137-credit curriculum.</p>
+                    <a href="https://ibe.lehigh.edu" target="_blank"><img src="images/IBE_logo.png" style="max-width: 280px; padding:0;"></a>
+                </div>
+            </div>
+            <div id="related_coursework" class="section" style="background-color: #EEE; padding: 0;">
+                <h3>Related Coursework<hr></h3>
+                <p class="subtitle">Below are some of the courses I have taken, sorted by relevance to each degree.
+                View my full course plan <a href="attachments/Curriculum Plan.pdf" target="_blank">here</a>, 
+                and view full course descriptions <a href="http://catalog.lehigh.edu/" target="_blank">here</a>.</p>
+                <br/>
+                <div class="flex-container">
+                    <div id="fin_classes" class="subsection">
+                        <h4>B.S. IBE Finance</h4>
+                        <ul>
+                            <li>Intro to Finance</li>
+                            <li>Intro to Financial Accounting</li>
+                            <li>Intro to Managerial Accounting</li>
+                            <li>Applied Macroeconomic Analysis</li>
+                            <li>Money and Banking</li>
+                            <li>Principles of Economics</li>
+                            <li>Intro to Information Systems</li>
+                            <li>Intro to Management</li>
+                            <li>Legal Environment of Business</li>
+                        </ul>
+                    </div>
+                    <div id="comp_engr_classes" class="subsection">
+                        <h4>B.S. Computer Engineering</h4>
+                        <ul>
+                            <li>Discrete Structures and Algorithms</li>
+                            <li>Systems Software</li>
+                            <li>Programming and Data Structures</li>
+                            <li>Fundamentals of Programming</li>
+                            <li>Electronic Circuits</li>
+                            <li>Principles of Electrical Engineering</li>
+                            <li>Intro to Computer Engineering</li>
+                            <li>Engineering Computations</li>
+                            <li>Intro Physics I-II</li>
+                            <li>Probability and Statistics</li>
+                            <li>Linear Methods</li>
+                            <li>Calculus I-III</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer">
-            <h3>Contact Me</h3>
-            <h4>rws222@lehigh.edu<br /><br /><a href="https://www.linkedin.com/in/ryanwschmid" target="_blank">LinkedIn</a></h4>
-            <p style="font-size: 16px;">This site was built from scratch with HTML and CSS.</p>
+        <div id="experience">
+            <div id="leadership" class="section">
+                <h3>Leadership<hr></h3>
+                <p class="subtitle">Here are some of my leadership roles at Lehigh.</p>
+                <div class="flex-container">
+                    <img src="images/Eta_Kappa_Nu_shield.png">
+                    <div>
+                        <h5>Treasurer, Eta Kappa Nu - Chi Chapter</h5>
+                        <h6>March 2020 - Present</h6>
+                        <p>Eta Kappa Nu (HKN) is the honor society of IEEE. At Lehigh, the chapter is dedicated to 
+                            maintaining a level of academic excellence throughout the Electrical and Computer Engineering 
+                            Department. As treasurer, my responsibilities include managing the organization's budget, 
+                            collecting dues, and helping to organize various academic programs, community events, and professional 
+                            workshops. 
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <img src="images/IEEE_Logo.jpg">
+                    <div>
+                        <h5>Vice President, IEEE</h5>
+                        <h6>March 2020 - Present</h6>
+                        <p>The IEEE student branch at Lehigh is committed to the students of the Electrical and Computer 
+                            Engineering Department. As Vice President, I work to build interest in the department, offer 
+                            academic and tutoring services, cultivate a network of student peers, and give our members 
+                            quality resources to develop themselves professionally.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <img src="images/Tea_Club_Logo.png">
+                    <div>
+                        <h5>Co-Founder and Treasurer, Tea Club</h5>
+                        <h6>February 2020 - Present</h6>
+                        <p>The Lehigh Tea Club was founded in the Spring of 2020 with the goal of bringing students together 
+                            through a mutual enjoyment of tea. As treasurer, I manage the club budget and work with the 
+                            other board members to host fun community-building events. Despite its non-academic nature, 
+                            co-founding this club has been an insightful experience.</p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <img src="images/Res_Life_Logo.jpg">
+                    <div>
+                        <h5>Vice President, Residence Hall Council</h5>
+                        <h6>September 2019 - May 2020</h6>
+                        <p>During my time as the Vice President of my residence hall, I was responsible for organizing 
+                            fun events to bring our residence hall community closer. The position allowed me to experience 
+                            event planning, marketing, and hosting and get a better sense of the logistics that are involved 
+                            with such events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="activities" class="section">
+                <h3>Activities<hr></h3>
+                <p class="subtitle">In my time away from leadership roles, I take part in Lehigh's <b>Investment Management Group </b>, 
+                    which collectively manages a portfolio of over $100,000. I am also the drummer for a Lehigh <b>jazz combo</b> which 
+                    rehearses weekly and performs in concert twice every semester. 
+                </p>
+                <br/>
+            </div>
+            <div id="skills" class="section" style="background-color: #EEE; padding: 0;">
+                <h3>Skills<hr></h3>
+                <p class="subtitle">These are some of the applications and programming languages with which I have prior experience.</p>
+                <br/>
+                <div class="flex-container">
+                    <div id="fin_classes" class="subsection">
+                        <h4>Applications</h4>
+                        <ul>
+                            <li>Microsoft Excel, Access, Word, and PowerPoint</li>
+                            <li>PSpice (for circuit simulation)</li>
+                            <li>Minitab and JMP (for statistical analysis)</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div id="comp_engr_classes" class="subsection">
+                        <h4>Programming Languages</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>MATLAB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="certifications" class="section">
+                <h3>Certification<hr></h3>
+                <div class="flex-container">
+                    <img src="images/Yellow_Belt.png">
+                    <div>
+                        <h5>Lean Six Sigma Yellow Belt</h5>
+                        <h6>Issued: December 2019</h6>
+                        <p>The Six Sigma program teaches the value and skills of using statistical analysis to maximize effectiveness 
+                            of various business processes. The Lean Six Sigma Yellow Belt earned through the IBE program ensures a 
+                            foundational understanding of applying these optimization methods through hands-on exercises and a final 
+                            project involving measuring a process on Lehigh's campus and performing the appropriate statistical 
+                            analysis to observe trends within. To learn more, visit 
+                            <a href = "https://asq.org/quality-resources/six-sigma" target="_blank">this webpage</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div id="footer" class="footer" style="background-color: #EEE;">
+            <h3 style="color: white;">Contact Me</h3>
+            <a href="mailto: rws222@lehigh.edu" title="Email me at rws222@lehigh.edu" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+            <a href="attachments/Resume.pdf" title="View my resume" target="_blank"><i class="fa fa-file-text fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/ryanwschmid/" title="Visit my LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <p>This site was built from scratch with HTML and CSS.</p>
         </div>
-    -->
     </body>
 </html>
