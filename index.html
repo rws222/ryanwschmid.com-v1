@@ -12,7 +12,7 @@
         <link rel="icon" href="images/Logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
     <body>
-        <div class="header">
+        <div class="header" id="header">
             <div class="overlay">
                 <div class="topbar">
                     <div class="logo">
@@ -31,13 +31,15 @@
                     <h2>Welcome</h2>
                     <h1>My name is Ryan Schmid,<br />a student at Lehigh University.</h1>
                 </div>
+                <i class="fa fa-angle-down fa-3x"></i>
+                <i class="fa fa-angle-down fa-5x"></i>
             </div>
         </div>
         <div id="about">
             <div id="about_me" class="section" style="background-color: #EEE;">
                 <h3>About Me<hr></h3>
                 <div class="flex-container">
-                    <img src="images/Myself.JPG">
+                    <img src="images/Myself.JPG" style="border-radius: 50%;">
                     <p>I am a junior at Lehigh University pursuing degrees in finance and computer engineering as part of the 
                         university's Integrated Business and Engineering (IBE) Honors Program. Based in Bethlehem, PA, I am a leader and 
                         active member in many campus clubs and organizations. In my free time, I enjoy playing the piano, drums, and guitar.</p>
@@ -101,7 +103,8 @@
         <div id="experience">
             <div id="leadership" class="section">
                 <h3>Leadership<hr></h3>
-                <p class="subtitle">Here are some of my leadership roles at Lehigh.</p>
+                <p class="subtitle" style="font-size: 26px;">Below are some of my leadership roles at Lehigh.</p>
+                <br/>
                 <div class="flex-container">
                     <img src="images/Eta_Kappa_Nu_shield.png">
                     <div>
@@ -203,12 +206,12 @@
                 </div>
             </div>
         </div>       
-        <div id="footer" class="footer" style="background-color: #EEE;">
+        <div id="footer" class="footer"">
             <h3 style="color: white;">Contact Me</h3>
             <a href="mailto: rws222@lehigh.edu" title="Email me at rws222@lehigh.edu" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
             <a href="attachments/Resume.pdf" title="View my resume" target="_blank"><i class="fa fa-file-text fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/ryanwschmid/" title="Visit my LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <p>This site was built from scratch with HTML and CSS.</p>
+            <p style="font-size: 20px;"><a href="#header" style="font-size: 26px;">Return to Top</a><br/><br/>This site was built from scratch with HTML and CSS.</p>
         </div>
     </body>
 </html>
