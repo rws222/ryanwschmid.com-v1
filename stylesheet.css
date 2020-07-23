@@ -97,7 +97,7 @@ hr {
 
 .fa-3x {
   position: absolute;
-  bottom: 40px;
+  bottom: 25px;
   left: 50vw;
   animation-name: arrow-down;
   animation-duration: 2s;
