@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&display=swap');
 
+div#preload {display: none;}
+
 html {
   scroll-behavior: smooth;
 }
@@ -186,12 +188,14 @@ li {
   font-size: 22px;
 }
 
-#fin_classes {
-  background-color: rgb(3, 131, 161);
+#fin_classes, #applications {
+  background: rgb(24,165,198);
+  background: linear-gradient(162deg, rgba(24,165,198,1) 0%, rgba(2,96,118,1) 100%);
 }
 
-#comp_engr_classes {
-  background-color: rgb(190,94,0);
+#comp_engr_classes, #prog_lang {
+  background: rgb(255,139,24);
+  background: linear-gradient(156deg, rgba(255,127,0,1) 0%, rgba(190,94,0,1) 100%);
 }
 
 .flex-container {
