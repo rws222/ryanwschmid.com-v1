@@ -41,22 +41,22 @@ h3 {
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 22px;
   text-align: center;
 }
 
 h5 {
-  font-size: 26px;
+  font-size: 22px;
   text-align: left;
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 
 p {
-  font-size: 22px;
+  font-size: 16px;
   text-align: left;
   line-height: 1.4;
 }
@@ -170,13 +170,25 @@ hr {
   margin-bottom: 0;
 }
 
+#related_coursework .flex-container, #skills .flex-container {
+  margin-bottom: 40px;
+}
+
+#related_coursework .flex-container *, #skills .flex-container * {
+  padding: 0;
+}
+
+.subsection {
+  width: 90vw;
+}
+
 ul {
   list-style-position: inside;
   padding: 20px;
 }
 
 li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -185,7 +197,7 @@ li {
 }
 
 #skills li {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #fin_classes, #applications {
@@ -207,10 +219,17 @@ li {
 
 .subtitle {
   padding: 0 20px;
+  margin: 0;
   text-align: center;
+  font-size: 20px;
 }
 
-#about_me img, #IBE_program a {
+#about_me img {
+  max-width: 200px;
+  width: 100%
+}
+
+#IBE_program a {
   max-width: 280px;
   width: 100%
 }
@@ -223,7 +242,7 @@ li {
 
 #leadership img, #certifications img {
   margin: 20px;
-  width: 280px;
+  width: 200px;
   padding: 0;
   border-radius: 50%;
 }
@@ -272,6 +291,14 @@ li {
   color: rgb(72,185,211);
 }
 
+#footer_text {
+  font-size: 16px;
+}
+
+#footer_text a {
+font-size: 26px;
+}
+
 
 /* --- fade animation --- */
 
@@ -287,12 +314,12 @@ li {
   /* For tablet: */
 
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.4;
   }
   
   h2 {
-    font-size: 66px;
+    font-size: 56px;
     line-height: 1.4;
   }
   
@@ -349,7 +376,7 @@ li {
     font-weight: 700;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 14px;
     padding: 20px 3vw;
     animation-name: fade-in;
     animation-duration: 2s;
@@ -384,16 +411,8 @@ li {
     padding: 0 40px;
   }
 
-  #related_coursework .flex-container, #skills .flex-container {
-    margin-bottom: 40px;
-  }
-
-  #related_coursework .flex-container *, #skills .flex-container * {
-    padding: 0;
-  }
-  
-  #activities p {
-    font-size: 28px;
+  .subsection {
+    width: 100%;
   }
 }
 
@@ -408,5 +427,64 @@ li {
   #related_coursework .flex-container, #skills .flex-container {
     margin-bottom: 40px;
     align-items: stretch;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  h2 {
+    font-size: 66px;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 26px;
+  }
+  
+  h6 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .topnav a, .connect a {
+    font-size: 18px;
+  }
+
+  #activities p {
+    font-size: 28px;
+  }
+
+  #leadership img, #certifications img {
+    width: 280px;
+  }
+
+  .subtitle {
+    margin: inherit;
+    font-size: 26px;
+  }
+  
+  #about_me img {
+    max-width: 280px;
+  }
+
+  li {
+    font-size: 18px;
+  }
+  
+  #skills li {
+    font-size: 22px;
+  }
+
+  #footer_text {
+    font-size: 20px;
   }
 }
