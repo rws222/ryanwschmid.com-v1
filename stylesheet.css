@@ -93,7 +93,7 @@ hr {
   background-color:rgba(50, 50, 50, 0.7);
 }
 
-.fa-5x {
+.fa-4x {
   opacity: 0;
 }
 
@@ -328,7 +328,7 @@ font-size: 26px;
     background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgb(50, 50, 50, 0.3));
   }
 
-  .fa-5x {
+  .fa-4x {
     position: absolute;
     bottom: 30px;
     left: 50vw;
@@ -430,12 +430,12 @@ font-size: 26px;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 4.7vh;/*40px*/
     line-height: 1.4;
   }
   
   h2 {
-    font-size: 66px;
+    font-size: 7.5vh;/*66px*/
     line-height: 1.4;
   }
 
