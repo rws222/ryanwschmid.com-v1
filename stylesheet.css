@@ -247,12 +247,16 @@ li {
   border-radius: 50%;
 }
 
+#leadership h3 {
+  color: rgb(76,215,247);
+}
+
 #leadership h5, #leadership h6, #certifications h5, #certifications h6 {
   margin: 0;
 }
 
 #leadership h6, #certifications h6 {
-  color: rgb(72,185,211);
+  color: rgb(255, 127, 0);
 }
 
 #leadership hr {
@@ -288,7 +292,7 @@ li {
 
 .footer a:hover {
   padding: 5px;
-  color: rgb(72,185,211);
+  color: rgb(255, 127, 0);/*72,185,211*/
 }
 
 #footer_text {
@@ -314,12 +318,12 @@ font-size: 26px;
   /* For tablet: */
 
   h1 {
-    font-size: 30px;
+    font-size: 4.7vh;
     line-height: 1.4;
   }
   
   h2 {
-    font-size: 56px;
+    font-size: 7.5vh;
     line-height: 1.4;
   }
   
@@ -427,16 +431,6 @@ font-size: 26px;
   #related_coursework .flex-container, #skills .flex-container {
     margin-bottom: 40px;
     align-items: stretch;
-  }
-
-  h1 {
-    font-size: 4.7vh;/*40px*/
-    line-height: 1.4;
-  }
-  
-  h2 {
-    font-size: 7.5vh;/*66px*/
-    line-height: 1.4;
   }
 
   h4 {
