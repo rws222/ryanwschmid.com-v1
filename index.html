@@ -10,220 +10,619 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" href="images/Logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
     <body>
-        <div class="header" id="header">
-            <div class="overlay">
-                <div class="topbar">
-                    <div class="logo">
-                        <a href="index.html"><img src="images/Logo.png"></a>
-                    </div>
-                    <div class="topnav">
-                        <a href="#about">ABOUT</a>
-                        <a href="#education">EDUCATION</a>
-                        <a href="#experience">EXPERIENCE</a>
-                    </div>
-                    <div class="connect">
-                        <a href="#footer">CONTACT</a>
-                    </div>
+        <!--Body Content-->
+        <div id="body-container" class="body-container">
+            <header id="fixed-header">
+                <div id="fixed-logo-and-name">
+                    <img src="images/Logo.png">
+                    <h1>Ryan Schmid</h1>
                 </div>
-                <div class="title">
+                <div id="fixed-nav-bar">
+                    <ul>
+                        <li><a id="home-link-f" class="link-f">Home</a></li>
+                        <li><a id="projects-link-f" class="link-f">Projects</a></li>
+                        <li><a id="skills-link-f" class="link-f">Skills</a></li>
+                        <li><a id="leadership-link-f" class="link-f">Leadership</a></li>
+                        <li><a id="contact-link-f" class="link-f">Contact</a></li>
+                    </ul>
+                    <a id="menu-btn" class="link-f"><i class="fa fa-4x fa-bars"></i></a>
+                </div>
+            </header>
+            <header id="static-header">
+                <div id="static-logo-and-name">
+                    <img src="images/Logo.png">
+                    <h1>Ryan Schmid</h1>
+                </div>
+                <div id="static-nav-bar">
+                    <ul>
+                        <li><a id="home-link-s">Home</a></li>
+                        <li><a id="projects-link-s">Projects</a></li>
+                        <li><a id="skills-link-s">Skills</a></li>
+                        <li><a id="leadership-link-s">Leadership</a></li>
+                        <li><a id="contact-link-s">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div id="mobile-static-header"></div>
+            <section id="welcome-section" class="flex-container">
+                <div id="profile-pic-design">
+                    <div id="profile-pic-square-2" class="profile-pic-square"></div>
+                    <div id="profile-pic-square-1" class="profile-pic-square"></div>
+                    <img id="profile-pic" src="images/Myself.JPG">
+                </div>
+                <article id="welcome-message">
                     <h2>Welcome</h2>
-                    <h1>My name is <span style="color: rgb(76,215,247)">Ryan</span> <span style="color: rgb(255,139,24)">Schmid</span>,<br />a student at Lehigh University.</h1>
+                    <p>I am a third-year student at Lehigh University studying computer engineering and finance as part of Lehigh’s Integrated Business and Engineering Honors Program.</p>
+                    <p><strong>B.S. Computer Engineering</br>B.S. Integrated Business and Engineering - Finance</strong></p>
+                    <p><strong>Expected graduation: May 2022</strong></p>
+                </article>
+            </section>
+            <section id="education-section" class="flex-container">
+                <article id="education-message">
+                    <h3>A versitile education</h3>
+                    <p>From linear systems to marketing strategies and data structures 
+                        to balance sheets, my education has exposed me to a wide variety 
+                        of ideas and skills that will allow me to succeed in my career, 
+                        no matter what I choose to do.</p>
+                    <a id="view-coursework-btn" class="button" href="coursework.html">View coursework</a>
+                </article>
+                <img id="education-pic" src="images/Lehigh_Alumni_Building.jpg">
+            </section>
+            <section id="ibe-section" class="flex-container">
+                <img id="ibe-pic" src="images/IBE_Logo.png">
+                <article id="ibe-message">
+                    <h3>Bringing it all together</h3>
+                    <p>Lehigh's Integrated Business and Engineering Honors Program (IBE) 
+                        focuses on product development and entrepreneurship through a 
+                        unique curriculum including simulations, specialized lectures, 
+                        and case study projects. The fifty students per year who complete 
+                        the rigorous 137-credit curriculum receive an AACSB-accredited 
+                        business degree in the form of a Bachelor of Science in Integrated 
+                        Business and Engineering with a major in their desired discipline.</p>
+                    <a id="ibe-btn" class="button" href="https://ibe.lehigh.edu/" target="_blank">Learn more</a>
+                </article>
+            </section>
+            <section id="honors-section" class="flex-container">
+                <div id="tau-beta-pi-third" class="third">
+                    <h3>Tau Beta Pi Member</h3>
+                    <img id="tau-beta-pi-logo" src="images/Tau_Beta_Pi_Logo_Purple.png">
                 </div>
-                <a href="#about" style="color: white;"><i class="fa fa-angle-down fa-3x"></i></a>
-                <a href="#about" style="color: white;"><i class="fa fa-angle-down fa-4x"></i></a>
-            </div>
-        </div>
-        <div id="about">
-            <div id="about_me" class="section" style="background-color: #EEE;">
-                <h3>About Me<hr></h3>
-                <div class="flex-container">
-                    <img src="images/Myself.JPG" style="border-radius: 50%;">
-                    <p>I am a junior at Lehigh University pursuing degrees in finance and computer engineering as part of the 
-                        university's Integrated Business and Engineering (IBE) Honors Program. Based in Bethlehem, PA, I am a leader and 
-                        active member in many campus clubs and organizations. In my free time, I enjoy playing the piano, drums, and guitar.</p>
+                <div id="deans-list-third" class="third">
+                    <h3>Dean's List</h3>
+                    <p id="GPA">3.8 GPA</p>
+                    <p id="overall-GPA-label">overall</p>
                 </div>
-            </div>
-        </div>
-        <div id="education">
-            <div id="IBE_program" class="section">
-                <h3>IBE Program<hr></h3>
-                <div class="flex-container">
-                    <p>Lehigh's <a href="https://ibe.lehigh.edu/" target="_blank" style="padding:0;">Integrated 
-                        Business and Engineering Honors Program (IBE)</a> focuses on product development and entrepreneurship through 
-                        a unique curriculum including simulations, specialized lectures, and case study projects as well as traditional 
-                        business, engineering, physics, mathematics, and humanities coursework. The fifty students per year who 
-                        complete the rigorous 137-credit curriculum receive an AACSB-accredited business degree in the form of a 
-                        Bachelor of Science in Integrated Business and Engineering with a major in their desired discipline.</p>
-                    <a href="https://ibe.lehigh.edu" target="_blank"><img src="images/IBE_logo.png" style="max-width: 280px; padding:0;"></a>
+                <div id="six-sigma-third" class="third">
+                    <h3>Six Sigma Yellow Belt</h3>
+                    <img id="six-sigma-logo" src="images/Yellow_Belt.png">
                 </div>
-            </div>
-            <div id="related_coursework" class="section" style="background-color: #EEE; padding: 0;">
-                <h3>Related Coursework<hr></h3>
-                <p class="subtitle">Below are some of the courses I have taken, sorted by relevance to each degree.
-                View my full course plan <a href="attachments/Curriculum Plan.pdf" target="_blank">here</a>, 
-                and view full course descriptions <a href="http://catalog.lehigh.edu/" target="_blank">here</a>.</p>
-                <br/>
-                <div class="flex-container">
-                    <div id="fin_classes" class="subsection">
-                        <h4>B.S. IBE Finance</h4>
-                        <ul>
-                            <li>Intro to Finance</li>
-                            <li>Intro to Financial Accounting</li>
-                            <li>Intro to Managerial Accounting</li>
-                            <li>Applied Macroeconomic Analysis</li>
-                            <li>Money and Banking</li>
-                            <li>Principles of Economics</li>
-                            <li>Intro to Information Systems</li>
-                            <li>Intro to Management</li>
-                            <li>Legal Environment of Business</li>
-                        </ul>
+            </section>
+            <section id="projects-section" class="large-section">
+                <h2>Projects</h2>
+                <div id="projects-content-wrapper" class="flex-container">
+                    <div id="projects-content" class="flex-container">
+                        <div id="project-ibe-capstone" class="project-square">
+                            <div class="project-title">
+                                <h3>IBE Capstone Project</h3>
+                            </div>
+                        </div>
+                        <div id="project-blackjack" class="project-square">
+                            <div class="project-title">
+                                <h3>Blackjack Web App</h3>
+                            </div>
+                        </div>
+                        <div id="project-jj-comp" class="project-square">
+                            <div class="project-title">
+                                <h3>J&J Case Competition</h3>
+                            </div>
+                        </div>
+                        <div id="project-cs-classwork" class="project-square">
+                            <div class="project-title">
+                                <h3>Programming Coursework</h3>
+                            </div>
+                        </div>
+                        <div id="project-data-str" class="project-square">
+                            <div class="project-title">
+                                <h3>Data Structures</h3>
+                            </div>
+                        </div>
+                        <div id="project-business-game" class="project-square">
+                            <div class="project-title">
+                                <h3>IBE Business Game</h3>
+                            </div>
+                        </div>
+                        <div id="project-hawk-messenger" class="project-square extra-project hidden-project">
+                            <div class="project-title">
+                                <h3>Hawk Messenger</h3>
+                            </div>
+                        </div>
+                        <div id="project-ibe-fw" class="project-square extra-project hidden-project">
+                            <div class="project-title">
+                                <h3>IBE Freshman Workshop</h3>
+                            </div>
+                        </div>
+                        <div id="project-prev-site" class="project-square extra-project hidden-project">
+                            <div class="project-title">
+                                <h3>Previous Website</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div id="comp_engr_classes" class="subsection">
-                        <h4>B.S. Computer Engineering</h4>
-                        <ul>
-                            <li>Discrete Structures and Algorithms</li>
-                            <li>Systems Software</li>
-                            <li>Programming and Data Structures</li>
-                            <li>Fundamentals of Programming</li>
-                            <li>Electronic Circuits</li>
-                            <li>Principles of Electrical Engineering</li>
-                            <li>Intro to Computer Engineering</li>
-                            <li>Engineering Computations</li>
-                            <li>Intro Physics I-II</li>
-                            <li>Probability and Statistics</li>
-                            <li>Linear Methods</li>
-                            <li>Calculus I-III</li>
-                        </ul>
+                </div>
+                <div id="projects-button-container" class="flex-container">
+                    <a id="projects-btn" class="button">Show all</a>
+                </div>
+            </section>
+            <section id="skills-section" class="large-section">
+                <h2>Skills</h2>
+                <div id="skills-content-wrapper" class="flex-container">
+                    <div id="skills-content" class="flex-container">
+                        <div id="skills-app" class="skills-subsection">
+                            <h3>Applications</h3>
+                            <div class="skill">
+                                <p>MS Excel</p>
+                                <div class="skill-bar">
+                                    <div id="excel" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>MS Word</p>
+                                <div class="skill-bar">
+                                    <div id="word" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>MS PowerPoint</p>
+                                <div class="skill-bar">
+                                    <div id="powerpoint" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Figma</p>
+                                <div class="skill-bar">
+                                    <div id="figma" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Adobe Illustrator</p>
+                                <div class="skill-bar">
+                                    <div id="illustrator" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>MS Access</p>
+                                <div class="skill-bar">
+                                    <div id="access" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>LabVIEW</p>
+                                <div class="skill-bar">
+                                    <div id="labview" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Minitab</p>
+                                <div class="skill-bar">
+                                    <div id="minitab" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>JMP</p>
+                                <div class="skill-bar">
+                                    <div id="jmp" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>PSpice</p>
+                                <div class="skill-bar">
+                                    <div id="pspice" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="skills-programming" class="skills-subsection">
+                            <h3>Programming</h3>
+                            <div class="skill">
+                                <p>Java</p>
+                                <div class="skill-bar">
+                                    <div id="java" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>HTML</p>
+                                <div class="skill-bar">
+                                    <div id="html" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>CSS</p>
+                                <div class="skill-bar">
+                                    <div id="css" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>C</p>
+                                <div class="skill-bar">
+                                    <div id="c" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>JavaScript</p>
+                                <div class="skill-bar">
+                                    <div id="javascript" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>MATLAB</p>
+                                <div class="skill-bar">
+                                    <div id="matlab" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>MongoDB</p>
+                                <div class="skill-bar">
+                                    <div id="mongodb" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>JQuery</p>
+                                <div class="skill-bar">
+                                    <div id="jquery" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Node.js</p>
+                                <div class="skill-bar">
+                                    <div id="node" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Express.js</p>
+                                <div class="skill-bar">
+                                    <div id="express" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Mongoose.js</p>
+                                <div class="skill-bar">
+                                    <div id="mongoose" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <section id="leadership-section" class="large-section">
+                <h2>Leadership</h2>
+                <div class="leadership-position">
+                    <img class="leadership-pic" src="images/Eta_Kappa_Nu_shield.png">
+                    <article class="leadership-article">
+                        <h3>Treasurer, Eta Kappa Nu - Chi Chapter</h3>
+                        <p class="subtitle">March 2020 - Present</p>
+                        <p>Eta Kappa Nu (HKN) is the honor society of IEEE. At Lehigh, 
+                            the chapter is dedicated to maintaining a level of academic 
+                            excellence throughout the Electrical and Computer Engineering 
+                            Department. As treasurer, my responsibilities include managing 
+                            the organization's budget, collecting dues, and helping to 
+                            organize various academic programs, community events, and 
+                            professional workshops.</p>
+                    </article>
+                </div>
+                <div class="leadership-position">
+                    <img class="leadership-pic" src="images/IEEE_Logo.jpg">
+                    <article class="leadership-article">
+                        <h3>Vice President, IEEE - Lehigh Branch</h3>
+                        <p class="subtitle">March 2020 - Present</p>
+                        <p>The IEEE student branch at Lehigh is committed to the students 
+                            of the Electrical and Computer Engineering Department. As Vice 
+                            President, I work to build interest in the department, offer 
+                            academic and tutoring services, cultivate a network of student 
+                            peers, and give our members quality resources to develop 
+                            themselves professionally.</p>
+                    </article>
+                </div>
+                <div class="leadership-position">
+                    <img class="leadership-pic" src="images/Tea_Club_Logo.png">
+                    <article class="leadership-article">
+                        <h3>Co-Founder and Treasurer, Lehigh Tea Club</h3>
+                        <p class="subtitle">February 2020 - Present</p>
+                        <p>The Lehigh Tea Club was founded in the Spring of 2020 with the 
+                            goal of bringing students together through a mutual enjoyment 
+                            of tea. As treasurer, I manage the club budget and work with 
+                            the other board members to host fun community-building events. 
+                            Despite its non-academic nature, co-founding this club has 
+                            been an insightful experience.</p>
+                    </article>
+                </div>
+                <div class="leadership-position">
+                    <img class="leadership-pic" src="images/Res_Life_Logo.jpg">
+                    <article class="leadership-article">
+                        <h3>Vice President, Residence Hall Council</h3>
+                        <p class="subtitle">September 2019 - May 2020</p>
+                        <p>During my time as the Vice President of my residence hall, I 
+                            was responsible for organizing fun events to bring our 
+                            residence hall community closer. The position allowed me to 
+                            experience event planning, marketing, and hosting and get a 
+                            better sense of the logistics that are involved with such 
+                            events.</p>
+                    </article>
+                </div>
+            </section>
+            <footer id="contact-section" class="large-section">
+                <div id="footer-content">
+                    <a id="view-resume-btn" class="button" href="attachments/Ryan Schmid - Resume.pdf" target="_blank">View resume</a>
+                    <div id="footer-links">
+                        <a id="linkedin-link" href="https://www.linkedin.com/in/ryanwschmid/" title="Visit my LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a id="github-link" href="https://github.com/rws222" title="Visit my Github" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    </div>
+                    <p>rws222@lehigh.edu</p>
+                </div>
+            </footer>
+            <!--Modals-->
+            <!--Mobile Nav Menu-->
+            <div id="modal-nav-menu" class="modal-bkg">
+                <a id="menu-close-btn">&times;</a>
+                <ul id="mobile-nav-menu">
+                    <li><a id="home-link-m" class="link-m">Home</a></li>
+                    <li><a id="projects-link-m" class="link-m">Projects</a></li>
+                    <li><a id="skills-link-m" class="link-m">Skills</a></li>
+                    <li><a id="leadership-link-m" class="link-m">Leadership</a></li>
+                    <li><a id="contact-link-m" class="link-m">Contact</a></li>
+                </ul>
             </div>
-        </div>
-        <div id="experience">
-            <div id="leadership" class="section">
-                <h3>Leadership<hr></h3>
-                <p class="subtitle">Here are some of my leadership roles at Lehigh.</p>
-                <br/>
-                <div class="flex-container">
-                    <img src="images/Eta_Kappa_Nu_shield.png">
-                    <div>
-                        <h5>Treasurer, Eta Kappa Nu - Chi Chapter</h5>
-                        <h6>March 2020 - Present</h6>
-                        <p>Eta Kappa Nu (HKN) is the honor society of IEEE. At Lehigh, the chapter is dedicated to 
-                            maintaining a level of academic excellence throughout the Electrical and Computer Engineering 
-                            Department. As treasurer, my responsibilities include managing the organization's budget, 
-                            collecting dues, and helping to organize various academic programs, community events, and professional 
-                            workshops. 
+            <!--Projects-->
+            <div id="modal-ibe-capstone" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-ibe-capstone" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>IBE Capstone Project</h3>
+                        <p class="subtitle">January 2021 - December 2021</p>
+                        <p>I am currently working on my IBE Capstone project, which involves working with other 
+                            IBE students to develop a business model, design, marketing, and construction of a 
+                            Digital Makerspace for a company called JuxtaHub, whose mission is to create a thriving
+                            intergenerational arts community in Emmaus, PA. The Digital Makerspace will provide xR 
+                            experience creation technologies to a broad set of creative digital entrepreneurs. In 
+                            addition, our team will focus on all aspects of an Open AR Cloud (OARC) based test bed 
+                            which will offer created xR experiences throughout the community of Emmaus.
                         </p>
                     </div>
+                    <div class="modal-button-container flex-container">
+                        <a class="button" href="https://juxtahub.com/" target="_blank">Visit JuxtaHub</a>
+                        <a id="close-btn-ibe-capstone" class="button close-button">Close</a>
+                    </div>
                 </div>
-                <div class="flex-container">
-                    <img src="images/IEEE_Logo.jpg">
-                    <div>
-                        <h5>Vice President, IEEE</h5>
-                        <h6>March 2020 - Present</h6>
-                        <p>The IEEE student branch at Lehigh is committed to the students of the Electrical and Computer 
-                            Engineering Department. As Vice President, I work to build interest in the department, offer 
-                            academic and tutoring services, cultivate a network of student peers, and give our members 
-                            quality resources to develop themselves professionally.
+            </div>
+            <div id="modal-blackjack" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-blackjack" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Blackjack Web App</h3>
+                        <p class="subtitle">November 2020</p>
+                        <p>As part of my Web Systems Programming (CSE 264) course in the fall semester 
+                            of 2020, my classmates and I were tasked with building a Blackjack web application. 
+                            The assignment was a test of our understanding of HTML, CSS, and JavaScript and 
+                            required us to use a Deck of Cards API to manage the deck, animations for the 
+                            cards, and an opponent that operated based on a set of rules given by the professor. 
+                            The full web app version can be found in my CS Classwork repository on GitHub, which 
+                            is also linked to the "Projects" section of my website. The "Play Blackjack" 
+                            link below goes to a reduced-code, fully functional demo of the game. Enjoy!
+                        </p>
+                        <p>Note: This web app was designed for desktop/laptop only. Mobile and tablet views 
+                            may not be supported. 
                         </p>
                     </div>
-                </div>
-                <div class="flex-container">
-                    <img src="images/Tea_Club_Logo.png">
-                    <div>
-                        <h5>Co-Founder and Treasurer, Tea Club</h5>
-                        <h6>February 2020 - Present</h6>
-                        <p>The Lehigh Tea Club was founded in the Spring of 2020 with the goal of bringing students together 
-                            through a mutual enjoyment of tea. As treasurer, I manage the club budget and work with the 
-                            other board members to host fun community-building events. Despite its non-academic nature, 
-                            co-founding this club has been an insightful experience.</p>
+                    <div class="modal-button-container flex-container">
+                        <a class="button" href="https://rws222.github.io/blackjack/" target="_blank">Play Blackjack</a>
+                        <a class="button" href="https://github.com/rws222/blackjack/" target="_blank">View on GitHub</a>
+                        <a id="close-btn-blackjack" class="button close-button">Close</a>
                     </div>
                 </div>
-                <div class="flex-container">
-                    <img src="images/Res_Life_Logo.jpg">
-                    <div>
-                        <h5>Vice President, Residence Hall Council</h5>
-                        <h6>September 2019 - May 2020</h6>
-                        <p>During my time as the Vice President of my residence hall, I was responsible for organizing 
-                            fun events to bring our residence hall community closer. The position allowed me to experience 
-                            event planning, marketing, and hosting and get a better sense of the logistics that are involved 
-                            with such events.
+            </div>
+            <div id="modal-jj-comp" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-jj-comp" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Johnson & Johnson University Case Competition</h3>
+                        <p class="subtitle">March 2020 - April 2020</p>
+                        <p>In the Spring of 2020, a group of fellow IBE students and I participated in the 
+                            Johnson & Johnson University Case Competition. In the given fictional scenario, 
+                            we were a team at Johnson & Johnson tasked with deciding the logistics of the 
+                            acquisition of a small, research-oriented company. Our decisions involved which 
+                            of three companies to choose from, when to buy them, which projects to adopt, 
+                            which marketing strategies to pursue, and more. Each decision had a financial 
+                            impact that could be seen in a provided interactive Excel worksheet showing the 
+                            project's cash flows, net present value, and other metrics. Our decisions had 
+                            to provide a financially sound project, adequate product market share, and 
+                            consistency with the company credo. After taking time to discuss each decision, 
+                            our team found a strategy that balanced each aspect of the project nicely. 
+                            After presenting our plan to the judges, we were given "a close second" place 
+                            in the competition. This experience offered insight into corporate finance 
+                            decision-making, helped me develop my teamwork skills through our group’s 
+                            involved discussions, and reminded me about the effectiveness of a team with 
+                            diverse thought processes.
                         </p>
                     </div>
-                </div>
-            </div>
-            <div id="activities" class="section">
-                <h3>Activities<hr></h3>
-                <p class="subtitle">In my time away from leadership roles, I take part in Lehigh's <b>Investment Management Group</b>, 
-                    which collectively manages a portfolio of over $100,000. I am also the drummer for a Lehigh <b>jazz combo</b> which 
-                    rehearses weekly and performs in concert twice every semester. 
-                </p>
-                <br/>
-            </div>
-            <div id="skills" class="section" style="background-color: #EEE; padding: 0;">
-                <h3>Skills<hr></h3>
-                <p class="subtitle">These are some of the applications and programming languages with which I have prior experience.</p>
-                <br/>
-                <div class="flex-container">
-                    <div id="applications" class="subsection">
-                        <h4>Applications</h4>
-                        <ul>
-                            <li>Microsoft Excel, Access, Word, and PowerPoint</li>
-                            <li>PSpice (for circuit simulation)</li>
-                            <li>Minitab and JMP (for statistical analysis)</li>
-                            <li>Adobe Illustrator</li>
-                        </ul>
-                    </div>
-                    <div id="prog_lang" class="subsection">
-                        <h4>Programming Languages</h4>
-                        <ul>
-                            <li>Java</li>
-                            <li>C</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>MATLAB</li>
-                        </ul>
+                    <div class="modal-button-container flex-container">
+                        <a id="close-btn-jj-comp" class="button close-button">Close</a>
                     </div>
                 </div>
             </div>
-            <div id="certifications" class="section">
-                <h3>Certification<hr></h3>
-                <div class="flex-container">
-                    <img src="images/Yellow_Belt.png">
-                    <div>
-                        <h5>Lean Six Sigma Yellow Belt</h5>
-                        <h6>Issued: December 2019</h6>
-                        <p>The Six Sigma program teaches the value and skills of using statistical analysis to maximize effectiveness 
-                            of various business processes. The Lean Six Sigma Yellow Belt earned through the IBE program ensures a 
-                            foundational understanding of applying these optimization methods through hands-on exercises and a final 
-                            project involving measuring a process on Lehigh's campus and performing the appropriate statistical 
-                            analysis to observe trends within. To learn more, visit 
-                            <a href = "https://asq.org/quality-resources/six-sigma" target="_blank">this webpage</a>.
+            <div id="modal-cs-classwork" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-cs-classwork" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Lehigh Programming Coursework</h3>
+                        <p class="subtitle">August 2019 - Present</p>
+                        <p>Throughout my time at Lehigh, my programming assignments have been a large 
+                            part of my coursework. Much of my computer science courses have used languages 
+                            like Java and C among others. Using the link below, visit my GitHub portfolio, 
+                            which contains many of my computer science and computer/electrical engineering 
+                            programs. 
                         </p>
                     </div>
+                    <div class="modal-button-container flex-container">
+                        <a class="button" href="https://github.com/rws222/Lehigh_Coursework/" target="_blank">Visit my GitHub</a>
+                        <a id="close-btn-cs-classwork" class="button close-button">Close</a>
+                    </div>
                 </div>
             </div>
-        </div>       
-        <div id="footer" class="footer">
-            <h3 style="color: white;">Contact Me</h3>
-            <a href="mailto: rws222@lehigh.edu" title="Email me at rws222@lehigh.edu" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
-            <a href="attachments/Resume.pdf" title="View my resume" target="_blank"><i class="fa fa-file-text fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/ryanwschmid/" title="Visit my LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <p id="footer_text"><a href="#header">Return to Top</a><br/><br/>This site was built from scratch with HTML and CSS.</p>
+            <div id="modal-data-str" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-data-str" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Data Structure Implementations</h3>
+                        <p class="subtitle">August 2019 - Present</p>
+                        <p>A significant part of computer science involves data structures. The link below will 
+                            bring you to my GitHub portfolio, where I have implemented a number of different 
+                            kinds of data structures in Java and C. 
+                        </p>
+                    </div>
+                    <div class="modal-button-container flex-container">
+                        <a class="button" href="https://github.com/rws222/Data_Structures/" target="_blank">Visit my GitHub</a>
+                        <a id="close-btn-data-str" class="button close-button">Close</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-business-game" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-business-game" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>IBE Business Game</h3>
+                        <p class="subtitle">August 2020 - December 2020</p>
+                        <p>In the Fall of 2020, I took an IBE course that involved learning how to use 
+                            Microsoft Excel for optimization and modeling in a varitey of business 
+                            applications. We were then able to directly apply these concepts in the second 
+                            part of the course: a business simulation game. 
+                        </p>
+                        <p>The business game involved our class forming 12 teams, or companies, that would 
+                            compete for the largest amount of net assets by the end of the semester. 
+                            Every team started with the identical assets and were in direct competition 
+                            with each other, selling identical units. Each week, all of the teams decided 
+                            how to price units across 12 cities, whether we want to build new plants or 
+                            warehouses, and how to invest our cash, whether it’s buying stocks in other 
+                            companies, certificates of deposit, cost control programs, adversitzing, and 
+                            R&D. 
+                        </p>
+                        <p>My team took a conservative approach thoughout the game by keeping 
+                            moderate prices, safe stock investments, and inventory. We used some of the 
+                            optimization strategies we learned in class to aid in certain decisions, such 
+                            as our weekly pricing strategy. In the trial run of the simulation, our team 
+                            placed first, and in the real simulation, we placed third. Our moderate strategy 
+                            was rewarding and proved the effectiveness of a well-thought and analyzed plan.
+                        </p>
+                    </div>
+                    <div class="modal-button-container flex-container">
+                        <a id="close-btn-business-game" class="button close-button">Close</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-hawk-messenger" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-hawk-messenger" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Hawk Messenger Web App</h3>
+                        <p class="subtitle">November 2020 - December 2020</p>
+                        <p>For the final project of my Web Systems Programming (CSE 264) course, a group 
+                            of students and I developed Hawk Messenger, a web application for messaging 
+                            other Lehigh students. When a user opens the page, they are prompted for their 
+                            name. If a conversation is in progress, the user is able to view all previous 
+                            messages in the current discussion, which are stored in and populated from a 
+                            database. When all users leave, the database is cleared of all messages. To 
+                            initiate a conversation, any user may press "send" without typing, which will 
+                            send a random joke from an API. The application uses socket.io, Node.js, 
+                            Express.js, Mongoose.js, and MongoDB. Feel free to try it at the link below. 
+                        </p>
+                        <p>Note: This web app was designed for desktop/laptop only. Mobile and tablet views 
+                            may not be supported. 
+                        </p>
+                    </div>
+                    <div class="modal-button-container flex-container">
+                        <a class="button" href="https://evening-lake-37049.herokuapp.com/" target="_blank">Open the app</a>
+                        <a id="close-btn-hawk-messenger" class="button close-button">Close</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-ibe-fw" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-ibe-fw" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>IBE Freshman Workshop</h3>
+                        <p class="subtitle">January 2019 - May 2019</p>
+                        <p>During my freshman year, I took an IBE-specific course that discussed fundamentals 
+                            of entrepreneurship. Over the last seven weeks of the course, our class was split 
+                            into groups and tasked with developing a product to solve some kind of problem. 
+                            For example, my group had to design a product that would effectively remove snow 
+                            and ice from the cars of daily commuters the morning after a snowstorm. The seven-week-long 
+                            project involved talking with our target customers, industry professionals, possible 
+                            manufacturers, Lehigh professors, and others to ultimately design a prototype and 
+                            business plan to bring the product to market. We then presented this product and plan 
+                            to professors, peers, and family.
+                        </p>
+                        <p>Our original design for the product resembled a small snowblower that the user could 
+                            move over the top of their car; however, we realized that this design was not realistic 
+                            for a number of reasons, such as power consumption and usability. After trying to find 
+                            ways to work around our problems, we realized we needed a completely new design. I 
+                            mention this design pivot because learning that it is sometimes necessary to change 
+                            direction entirely for the best overall outcome was one of the biggest lessons that 
+                            I learned while working on the project. 
+                        </p>
+                        <p>We named our final product Avalanche. This snow shovel shown in the image below came 
+                            with a number of features that make it effective. Its shape as shown is ideal for pushing 
+                            snow off a car. The square face can also be rotated parallel to the shaft and turn 
+                            the device into a shovel for digging a car out of a snow pile. The handle can be taken 
+                            out to reveal a pointed end used for breaking up ice. Also, the user can attach a 
+                            "de-icing" slip to a roller at the base of the square face to help melt stuck-on ice. 
+                        </p>
+                        <p>This project was very involved, and I enjoyed getting the hands-on experience of 
+                            working through an entrepreneurial process. It was a great exercise to understand 
+                            much of what goes into starting a business. Many of the skills I developed and insights 
+                            I gathered while working on this project I will carry with me throughout my professional 
+                            career.
+                        </p>
+                        <div class="flex-container">
+                            <img id="ibe-fw-brush" src="images/projects/IBE_FW_Brush.jpg">
+                        </div>
+                    </div>
+                    <div class="modal-button-container flex-container">
+                        <a id="close-btn-ibe-fw" class="button close-button">Close</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-prev-site" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-prev-site" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Previous Website</h3>
+                        <p class="subtitle">April 2020 - August 2020</p>
+                        <p>Alongside my coursework in the summer of 2020, I decided to teach myself HTML and CSS 
+                            in order to build a personal website. While building the site, I found a real interest 
+                            in web development. I decided to pursue it further by taking a web systems course the 
+                            following semester. After this course, I decided to have another attempt at a personal 
+                            website, which is what you are currently using. In the spirit of reflecting on growth, 
+                            I decided to link my previous website below. The website linked here was published until 
+                            January 2021.
+                        </p>
+                    </div>
+                    <div class="modal-button-container flex-container">
+                        <a class="button" href="https://rws222.github.io/first_personal_site/" target="_blank">Visit site</a>
+                        <a id="close-btn-prev-site" class="button close-button">Close</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="preload"> <!--Preload images-->
-            <img src="images/Lehigh_Overhead_Dark.jpg">
-            <img src="images/Logo.png">
-            <img src="images/Myself.JPG">
-            <img src="images/IBE_logo.png">
-            <img src="images/Eta_Kappa_Nu_shield.png">
-            <img src="images/IEEE_Logo.jpg">
-            <img src="images/Tea_Club_Logo.png">
-            <img src="images/Res_Life_Logo.jpg">
-            <img src="images/Yellow_Belt.png">
+        <!--Preload images-->
+        <div id="preload"> 
+            <img src="images/projects/IBE_FW_Brush.jpg">
+            <img src="images/projects/IBE_FW_modal.jpg">
+            <img src="images/projects/J&J_Competition_modal.png">
+            <img src="images/projects/Previous_Website_modal.jpg">
+            <img src="images/projects/J&J_Competition_modal.png">
+            <img src="images/Linderman_inside.jpg">
         </div>
+        <!--Script-->
+        <script src="main.js"></script>
     </body>
 </html>

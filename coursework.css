@@ -1,0 +1,115 @@
+/* Coursework page */
+
+#coursework-section {
+    padding: 70px 0;
+}
+
+.coursework-subsection {
+    padding: 3.0rem 5.0rem;
+    box-sizing: border-box;
+}
+
+#coursework-in-progress {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(53, 67, 82, 0.8)), to(rgba(53, 67, 82, 0.8))), url('images/Linderman_inside.jpg');
+    background: linear-gradient(0deg, rgba(53, 67, 82, 0.8), rgba(53, 67, 82, 0.8)), url('images/Linderman_inside.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+#in-progress-content {
+    background-color: rgb(81, 134, 194);
+    padding: 0 5.0rem 2.0rem;
+    margin: 5.0rem;
+}
+
+#in-progress-content > h3 {
+    text-align: center;
+}
+
+#coursework-completed-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+            align-items: flex-start;
+}
+
+.coursework-column {
+    width: 33%;
+}
+
+.coursework-column > p {
+    margin: 0;
+}
+
+.coursework-column > .subtitle {
+    font-weight: 600;
+    margin: 3.0rem 0;
+}
+
+#completed-counts {
+    margin: 6.0rem 0 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+#coursework-btns-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    margin: 4.0rem 0 0;
+}
+
+#coursework-btns-wrapper > a {
+    margin: 0 2.0rem;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px-768px) */
+@media only screen and (max-width: 768px) {
+  
+    /* Header Bar */
+    
+    #home-link-f {
+        font-size: 20px;
+    }
+    
+    #menu-btn {
+      display: none;
+    }
+  
+    #fixed-nav-bar > ul {
+      display: -webkit-box;
+      display: flex;
+      height: 24px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #coursework-completed-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+
+    .coursework-column {
+        width: 100%;
+    }
+
+    #coursework-btns-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+
+    #coursework-btns-wrapper > a {
+        margin: 2.0rem 0 0;
+    }
+}
