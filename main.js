@@ -1,6 +1,9 @@
 window.onload = function() {
     scrollHeader();
     navIndicator();
+    //Remove loader
+    $("#loader-wrapper").fadeOut();
+    document.body.style.overflowY = "visible";
 }
 
 window.onscroll = function() {
