@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 
-/* colors 
+/* Colors 
 #B1D2F7 - rgb(177, 210, 247)
 #66A9F5 - rgb(102, 169, 245)
 #5186C2 - rgb(81, 134, 194)
@@ -19,7 +19,7 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: hidden;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
@@ -107,13 +107,14 @@ a {
   transition: all 0.3s ease;
 }
 
-a:hover {
-  color: rgb(81, 134, 194);
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+@media (hover: hover) {
+  a:hover {
+    color: rgb(81, 134, 194);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
 }
-
 
 .subtitle {
   color: rgb(177, 210, 247);
@@ -137,10 +138,88 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.button:hover {
-  background-color: white;
-  color: rgb(53, 67, 82);
+@media (hover: hover) {
+  .button:hover {
+    background-color: white;
+    color: rgb(53, 67, 82);
+  }
 }
+
+/* Loader */
+
+#loader-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(49, 81, 117);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* styles adapted from https://codepen.io/AlexWarnes/pen/jXYYKL */
+.pulse-container {
+  width: 120px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.pulse-bubble {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(177, 210, 247);
+}
+
+.pulse-bubble-1 {
+    -webkit-animation: pulse .4s ease 0s infinite alternate;
+            animation: pulse .4s ease 0s infinite alternate;
+}
+.pulse-bubble-2 {
+    -webkit-animation: pulse .4s ease .2s infinite alternate;
+            animation: pulse .4s ease .2s infinite alternate;
+}
+.pulse-bubble-3 {
+    -webkit-animation: pulse .4s ease .4s infinite alternate;
+            animation: pulse .4s ease .4s infinite alternate;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: .25;
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: .25;
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+  }
+}
+
+
 
 /* Header Bar */
 
@@ -383,11 +462,13 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-.project-square:hover, .project-square:focus {
-  -webkit-transform: translate(0, -4px);
-          transform: translate(0, -4px);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+@media (hover: hover) {
+  .project-square:hover, .project-square:focus {
+    -webkit-transform: translate(0, -4px);
+            transform: translate(0, -4px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
 }
 
 .project-title {
@@ -410,8 +491,10 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-.project-square:hover .project-title {
-  opacity: 1;
+@media (hover: hover) {
+  .project-square:hover .project-title {
+    opacity: 1;
+  }
 }
 
 #projects-content {
