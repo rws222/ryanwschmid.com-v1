@@ -4,9 +4,9 @@
     <head>
         <title>Ryan Schmid | Home</title>
         <meta charset="UTF-8">
+        <meta name="author" content="Ryan Schmid">
         <meta name="description" content="Ryan Schmid's personal website.">
         <meta name="keywords" content="Ryan,Schmid,Lehigh,University,Computer,Engieering,Science,Business,Finance">
-        <meta name="author" content="Ryan Schmid">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" href="images/Logo.png">
@@ -14,6 +14,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
+        <!--Loader-->
+        <div id="loader-wrapper">
+            <div class="spinner-box">
+                <div class="pulse-container">  
+                    <div class="pulse-bubble pulse-bubble-1"></div>
+                    <div class="pulse-bubble pulse-bubble-2"></div>
+                    <div class="pulse-bubble pulse-bubble-3"></div>
+                </div>
+            </div>
+        </div>
         <!--Body Content-->
         <div id="body-container" class="body-container">
             <header id="fixed-header">
@@ -73,7 +83,7 @@
                 <img id="education-pic" src="images/Lehigh_Alumni_Building.jpg">
             </section>
             <section id="ibe-section" class="flex-container">
-                <img id="ibe-pic" src="images/IBE_Logo.png">
+                <img id="ibe-pic" src="images/IBE_logo.png">
                 <article id="ibe-message">
                     <h3>Bringing it all together</h3>
                     <p>Lehigh's Integrated Business and Engineering Honors Program (IBE) 
@@ -615,9 +625,11 @@
         </div>
         <!--Preload images-->
         <div id="preload"> 
+            <img src="images/projects/Hawk_Messenger.jpg">
+            <img src="images/projects/IBE_Freshman_Workshop.jpg">
+            <img src="images/projects/Previous_Website.jpg">
             <img src="images/projects/IBE_FW_Brush.jpg">
             <img src="images/projects/IBE_FW_modal.jpg">
-            <img src="images/projects/J&J_Competition_modal.png">
             <img src="images/projects/Previous_Website_modal.jpg">
             <img src="images/projects/J&J_Competition_modal.png">
             <img src="images/Linderman_inside.jpg">
