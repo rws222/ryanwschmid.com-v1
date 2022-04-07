@@ -541,6 +541,9 @@ a {
 
   /* Individual Project Image Styles */
 
+#project-fin377, #img-fin377 {
+  background-image: url("images/projects/regression.png");
+}
 #project-ibe-capstone, #img-ibe-capstone {
   background-image: url("images/projects/IBE_Capstone.jpg");
 }
@@ -661,17 +664,17 @@ a {
 #jmp {width: 50%;}
 #pspice {width: 50%;}
 
-#java {width: 100%;}
 #html {width: 100%;}
 #css {width: 100%;}
+#java {width: 80%;}
 #c {width: 80%;}
 #javascript {width: 80%;}
-#matlab {width: 70%;}
+#python {width: 70%}
+#matlab {width: 60%;}
 #mongodb {width: 60%;}
 #jquery {width: 50%;}
 #node {width: 50%;}
-#express {width: 40%;}
-#mongoose {width: 40%;}
+
   
 
 /* Leadership Section */

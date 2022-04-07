@@ -66,7 +66,7 @@
                 </div>
                 <article id="welcome-message">
                     <h2>Welcome</h2>
-                    <p>I am a third-year student at Lehigh University studying computer engineering and finance as part of Lehigh’s Integrated Business and Engineering Honors Program.</p>
+                    <p>I am a fourth-year student at Lehigh University studying computer engineering and finance as part of Lehigh’s Integrated Business and Engineering Honors Program.</p>
                     <p><strong>B.S. Computer Engineering</br>B.S. Integrated Business and Engineering - Finance</strong></p>
                     <p><strong>Expected graduation: May 2022</strong></p>
                 </article>
@@ -115,6 +115,11 @@
                 <h2>Projects</h2>
                 <div id="projects-content-wrapper" class="flex-container">
                     <div id="projects-content" class="flex-container">
+                        <div id="project-fin377" class="project-square">
+                            <div class="project-title">
+                                <h3>Data Science for Finance</h3>
+                            </div>
+                        </div>
                         <div id="project-ibe-capstone" class="project-square">
                             <div class="project-title">
                                 <h3>IBE Capstone Project</h3>
@@ -130,7 +135,7 @@
                                 <h3>J&J Case Competition</h3>
                             </div>
                         </div>
-                        <div id="project-cs-classwork" class="project-square">
+                        <!--<div id="project-cs-classwork" class="project-square">
                             <div class="project-title">
                                 <h3>Programming Coursework</h3>
                             </div>
@@ -139,13 +144,13 @@
                             <div class="project-title">
                                 <h3>Data Structures</h3>
                             </div>
-                        </div>
+                        </div>-->
                         <div id="project-business-game" class="project-square">
                             <div class="project-title">
                                 <h3>IBE Business Game</h3>
                             </div>
                         </div>
-                        <div id="project-hawk-messenger" class="project-square extra-project hidden-project">
+                        <div id="project-hawk-messenger" class="project-square">
                             <div class="project-title">
                                 <h3>Hawk Messenger</h3>
                             </div>
@@ -236,12 +241,6 @@
                         <div id="skills-programming" class="skills-subsection">
                             <h3>Programming</h3>
                             <div class="skill">
-                                <p>Java</p>
-                                <div class="skill-bar">
-                                    <div id="java" class="skill-bar-fill"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
                                 <p>HTML</p>
                                 <div class="skill-bar">
                                     <div id="html" class="skill-bar-fill"></div>
@@ -254,7 +253,13 @@
                                 </div>
                             </div>
                             <div class="skill">
-                                <p>C</p>
+                                <p>Java</p>
+                                <div class="skill-bar">
+                                    <div id="java" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>C/C++</p>
                                 <div class="skill-bar">
                                     <div id="c" class="skill-bar-fill"></div>
                                 </div>
@@ -263,6 +268,12 @@
                                 <p>JavaScript</p>
                                 <div class="skill-bar">
                                     <div id="javascript" class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Python</p>
+                                <div class="skill-bar">
+                                    <div id="python" class="skill-bar-fill"></div>
                                 </div>
                             </div>
                             <div class="skill">
@@ -287,18 +298,6 @@
                                 <p>Node.js</p>
                                 <div class="skill-bar">
                                     <div id="node" class="skill-bar-fill"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <p>Express.js</p>
-                                <div class="skill-bar">
-                                    <div id="express" class="skill-bar-fill"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <p>Mongoose.js</p>
-                                <div class="skill-bar">
-                                    <div id="mongoose" class="skill-bar-fill"></div>
                                 </div>
                             </div>
                         </div>
@@ -384,17 +383,38 @@
                 </ul>
             </div>
             <!--Projects-->
+            <div id="modal-fin377" class="modal-bkg">
+                <div class="modal">
+                    <div id="img-fin377" class="modal-img"></div>
+                    <div class="modal-content">
+                        <h3>Data Science for Finance</h3>
+                        <p class="subtitle">January 2022 - May 2022</p>
+                        <p>I am currently taking a course called "Data Science for Finance," which applies 
+                            data science concepts in analyzing financial data. For the course's midterm 
+                            project, we attempted to answer the question, "what types of firms were hurt more 
+                            or less by covid?" The work for my project is below. 
+                        </p>
+                        <iframe src="attachments/analysis_report.html" width="90%" height="600px"></iframe>
+                    </div>
+                    <div class="modal-button-container flex-container">
+                        <a id="close-btn-fin377" class="button close-button">Close</a>
+                    </div>
+                </div>
+            </div>
             <div id="modal-ibe-capstone" class="modal-bkg">
                 <div class="modal">
                     <div id="img-ibe-capstone" class="modal-img"></div>
                     <div class="modal-content">
                         <h3>IBE Capstone Project</h3>
                         <p class="subtitle">January 2021 - December 2021</p>
-                        <p>I am currently working on my IBE Capstone project, which involves working with other 
-                            IBE students to develop a product and business plan for one aspect of a client 
-                            company's work. For now, my team and I will likely be working on the development of 
-                            a virtual reality makerspace for a small business; however, this could change as we 
-                            continue to work on the project. 
+                        <p>In 2021, I completed my IBE Capstone project, which involved working with other 
+                            IBE students to develop a virtual reality learning curriculum for special needs 
+                            individuals. We worked with a local community center's digital makerspace to 
+                            design an effective curriculum for the community. We performed extensive research 
+                            in both the community as well as among industry professionals throughout the 
+                            country. Professionals with special needs teaching experience assisted us in 
+                            figuring out the logistics of hosting such a program. Finally, we presented our 
+                            plan to the community center's board of directors.
                         </p>
                     </div>
                     <div class="modal-button-container flex-container">
@@ -408,7 +428,7 @@
                     <div class="modal-content">
                         <h3>Blackjack Web App</h3>
                         <p class="subtitle">November 2020</p>
-                        <p>As part of my Web Systems Programming (CSE 264) course in the fall semester 
+                        <p>As part of my Web Systems Programming course in the fall semester 
                             of 2020, my classmates and I were tasked with building a Blackjack web application. 
                             The assignment was a test of our understanding of HTML, CSS, and JavaScript and 
                             required us to use a Deck of Cards API to manage the deck, animations for the 
@@ -500,7 +520,7 @@
                         <h3>IBE Business Game</h3>
                         <p class="subtitle">August 2020 - December 2020</p>
                         <p>In the Fall of 2020, I took an IBE course that involved learning how to use 
-                            Microsoft Excel for optimization and modeling in a varitey of business 
+                            Microsoft Excel for optimization and modeling in a variety of business 
                             applications. We were then able to directly apply these concepts in the second 
                             part of the course: a business simulation game. 
                         </p>
@@ -510,10 +530,10 @@
                             with each other, selling identical units. Each week, all of the teams decided 
                             how to price units across 12 cities, whether we want to build new plants or 
                             warehouses, and how to invest our cash, whether it’s buying stocks in other 
-                            companies, certificates of deposit, cost control programs, adversitzing, and 
+                            companies, certificates of deposit, cost control programs, advertizing, and 
                             R&D. 
                         </p>
-                        <p>My team took a conservative approach thoughout the game by keeping 
+                        <p>My team took a conservative approach throughout the game by keeping 
                             moderate prices, safe stock investments, and inventory. We used some of the 
                             optimization strategies we learned in class to aid in certain decisions, such 
                             as our weekly pricing strategy. In the trial run of the simulation, our team 
@@ -532,7 +552,7 @@
                     <div class="modal-content">
                         <h3>Hawk Messenger Web App</h3>
                         <p class="subtitle">November 2020 - December 2020</p>
-                        <p>For the final project of my Web Systems Programming (CSE 264) course, a group 
+                        <p>For the final project of my Web Systems Programming course, a group 
                             of students and I developed Hawk Messenger, a web application for messaging 
                             other Lehigh students. When a user opens the page, they are prompted for their 
                             name. If a conversation is in progress, the user is able to view all previous 

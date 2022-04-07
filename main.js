@@ -216,6 +216,15 @@ $("#modal-nav-menu").click(function() {
 
 //Project thumbnail modals
 
+//fin377
+$("#project-fin377").click(function() {
+    $("#modal-fin377").css("display", "flex");
+    $("body").css("overflow-y", "hidden");
+});
+$("#close-btn-fin377").click(function() {
+    $("#modal-fin377").css("display", "none");
+    $("body").css("overflow-y", "visible");
+});
 //ibe capstone
 $("#project-ibe-capstone").click(function() {
     $("#modal-ibe-capstone").css("display", "flex");
